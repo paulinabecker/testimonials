@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+body {
+  font-family: Barlow Semi Condensed;
+  background-color: hsl(210, 46%, 95%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+#daniel{
+    background-color: hsl(263, 55%, 52%);
+        background-image: url(../images/bg-pattern-quotation.svg);
+        background-repeat: no-repeat;
+        background-position: calc(80%) calc(10%);
+        color: hsl(0, 0%, 100%);
+        grid-area: daniel;
+        
+
+        
+}
+@media (min-width: 768px) {
+    #daniel {
+        grid-column: span 2;
+        grid-row: span 1;
+        height: 300px;
+    
+        
+      }
+}
+
+#jonathan{
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(0, 0%, 100%);
+    grid-area: jonathan;
+}
+
+@media (min-width: 768px){
+    #jonathan {
+        grid-column: span 1; 
+        grid-row: span 1;
+        height: 300px;
+      }
+}
+
+#jeanette{
+    background-color: hsl(0, 0%, 100%);
+        color: (210, 46%, 95%);
+        grid-area: jeanette;
+}
+@media (min-width: 768px){
+    #jeanette {
+        grid-column: span 1; /* Ocupa una columna */
+        grid-row: span 1; /* Ocupa una fila */
+        height: 300px;
+        
+      }
+}
+
+#patrick{
+    background-color: hsl(219, 29%, 14%);
+        color: hsl(0, 0%, 100%);
+        grid-area: patrick;
+}
+@media (min-width: 768px){
+    #patrick {
+        grid-column: span 2;
+        grid-row: span 1;
+        height: 300px;
+        
+      }
+}
+
+#kira{
+    background-color: hsl(0, 0%, 100%);
+    color: (210, 46%, 95%);
+    grid-area: kira;
+    
+}
+
+@media (min-width: 768px){
+    #kira {
+        grid-column: span 1;
+        grid-row: span 2;
+        height: 600px;
+        grid-column: 4 / span 1; /* Ocupa la columna 4 */
+        grid-row: 1 / span 2; /* Ocupa dos filas */
+        
+        
+      }
+}
+
+.name {
+  font-size: 16px;
+}
+
+.graduate {
+  font-size: 13px;
+  opacity: 50%;
+}
+
+.paragraph {
+  opacity: 70%;
+  font-weight: 400px;
+  font-size: 13px;
+}
+
+img {
+  border-radius: 100%;
+}
+
+.color_border {
+  border: 2px solid hsl(210, 46%, 95%);
+}
+
+.box {
+  border-radius: 10px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.textone {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.student {
+  display: flex;
+  gap: 30px;
+}
+
+.info-student {
+  line-height: 0.3;
+}
+
+.container {
+    display: grid;
+    grid-column: auto;
+    gap: 20px;
+    margin: 30px;
+    grid-template-areas: "daniel"
+                         "jonathan"
+                        "jeanette" 
+                         "patrick"
+                         "kira";
+}
+
+@media (min-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* Cuatro columnas de igual tamaño */
+        grid-template-rows: repeat(2, auto); /* Dos filas, con altura automática */
+        gap: 18px; /* Espacio entre columnas y filas */
+        margin: 70px; 
+        grid-template-areas: 
+        "daniel daniel jonathan kira"
+        "jeanette patrick patrick kira";
+        
+        
+      }
+}
+
